@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CWindowsFormsApp
 {
@@ -22,18 +23,39 @@ namespace CWindowsFormsApp
 
         }
 
+        public virtual string PlaceholderText { get; set; }
+
+        private void frmForcus_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string placeHolderText = this.textBoxName.Text;
 
-                // プレースホルダ―のテキストを設定
-                this.textBoxName.PlaceholderText = placeHolderText;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxName_Enter(object sender, EventArgs e) {
+            if (textBoxName.Text=="name") {
+                textBoxName.Text="";
+                textBoxName.ForeColor=Color.Black;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+        }
+
+        private void textBoxEmail_Enter(object sender, EventArgs e) {
+            if (textBoxEmail.Text=="aiueo@example.com"){
+                textBoxEmail.Text="";
+                textBoxEmail.ForeColor=Color.Black;
             }
         }
     }
