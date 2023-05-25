@@ -58,5 +58,15 @@ namespace CWindowsFormsApp
                 textBoxEmail.ForeColor=Color.Black;
             }
         }
+
+        private void textBoxName_Leave(object sender, EventArgs e)
+        {
+            if (textBoxName.Text=="")
+            {
+                textBoxName.Text="name";
+                textBoxName.ForeColor=Color.Silver;
+            }
+
+        }
     }
 }

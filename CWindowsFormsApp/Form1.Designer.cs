@@ -100,6 +100,7 @@
             this.textBoxName.Text = "name";
             this.textBoxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
+            this.textBoxName.Leave += new System.EventHandler(this.textBoxName);
             // 
             // Form1
             // 
