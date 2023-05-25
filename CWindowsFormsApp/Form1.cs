@@ -21,5 +21,20 @@ namespace CWindowsFormsApp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string placeHolderText = this.textBoxName.Text;
+
+                // プレースホルダ―のテキストを設定
+                this.textBoxName.PlaceholderText = placeHolderText;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
