@@ -23,12 +23,6 @@ namespace CWindowsFormsApp
 
         }
 
-        public virtual string PlaceholderText { get; set; }
-
-        private void frmForcus_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -59,6 +53,16 @@ namespace CWindowsFormsApp
             }
         }
 
+
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text=="")
+            {
+                textBoxEmail.Text="aiueo@example.com";
+                textBoxEmail.ForeColor=Color.Silver;
+            }
+        }
+
         private void textBoxName_Leave(object sender, EventArgs e)
         {
             if (textBoxName.Text=="")
@@ -66,6 +70,11 @@ namespace CWindowsFormsApp
                 textBoxName.Text="name";
                 textBoxName.ForeColor=Color.Silver;
             }
+        }
+
+        private void textBoxEmail_TextChanged_1(object sender, EventArgs e)
+        {
+
 
         }
     }

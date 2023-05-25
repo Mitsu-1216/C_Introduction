@@ -47,8 +47,9 @@
             this.textBoxEmail.Size = new System.Drawing.Size(450, 41);
             this.textBoxEmail.TabIndex = 1;
             this.textBoxEmail.Text = "aiueo@example.com";
-            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
+            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged_1);
             this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // label1
             // 
@@ -100,7 +101,7 @@
             this.textBoxName.Text = "name";
             this.textBoxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
-            this.textBoxName.Leave += new System.EventHandler(this.textBoxName);
+            this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
             // Form1
             // 
