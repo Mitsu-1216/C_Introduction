@@ -5,6 +5,11 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWindowsFormsApp", "CWindowsFormsApp\CWindowsFormsApp.csproj", "{263BE6C4-26C1-484D-ABBE-14242427F60D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{7ADAB375-2B2D-4F4D-AFCC-4D74F3EF4120}"
+	ProjectSection(SolutionItems) = preProject
+		File1.cs = File1.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
