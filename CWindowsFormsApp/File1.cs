@@ -13,6 +13,8 @@ class File1
 		fm.Height = 100;
 
 
+		string[] str = new string [3]{"シャーペン","下敷き","マウス" };
+
 		Application.Run(fm);
 	}
 
